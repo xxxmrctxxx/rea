@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: #05060f;
+  overflow: hidden;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: #fff;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+canvas {
+  display: block;
+  outline: none;
+  image-rendering: auto;
+}
+
+#title {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at 50% 30%, #3a2a7a, #0b0a2a 70%);
+}
+
+#title[hidden] {
+  display: none;
+}
+
+.card {
+  width: min(720px, 92vw);
+  padding: 32px;
+  border-radius: 20px;
+  background: rgba(15, 18, 40, 0.85);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  display: grid;
+  gap: 16px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 44px;
+  color: #ffb300;
+  text-shadow: 0 3px 0 #6d4c00;
+}
+
+.sub,
+.hint {
+  margin: 0;
+  color: #b0bec5;
+}
+
+.hint {
+  font-size: 13px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+}
+
+input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #455a64;
+  background: #10142a;
+  color: #fff;
+  font-size: 16px;
+}
+
+#jobs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.job {
+  display: grid;
+  gap: 4px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  background: #1a1f3d;
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+}
+
+.job strong {
+  color: var(--job);
+  font-size: 16px;
+}
+
+.job small {
+  color: #90a4ae;
+  font-size: 11px;
+}
+
+.job.selected {
+  border-color: var(--job);
+  background: #222a52;
+}
+
+button.primary {
+  padding: 12px;
+  border: 0;
+  border-radius: 12px;
+  background: #ffb300;
+  color: #3e2723;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button[hidden] {
+  display: none;
+}
