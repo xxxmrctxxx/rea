@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maple PC</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="game" width="1280" height="720" tabindex="0"></canvas>
+    <div id="title">
+      <div class="card">
+        <h1>Maple PC</h1>
+        <p class="sub">Phiêu lưu hành động 2D lấy cảm hứng từ MapleStory M</p>
+        <button id="continue" class="primary" hidden></button>
+        <label
+          >Tên nhân vật <input id="name" maxlength="12" placeholder="Maple"
+        /></label>
+        <div id="jobs"></div>
+        <button id="start" class="primary">Tạo nhân vật mới</button>
+        <p class="hint">
+          ← → di chuyển · Space nhảy · Z đánh · A S D F kỹ năng · T tự động săn
+          · H hướng dẫn
+        </p>
+      </div>
+    </div>
+    <script src="src/core.js"></script>
+    <script src="src/data.js"></script>
+    <script src="src/physics.js"></script>
+    <script src="src/combat.js"></script>
+    <script src="src/entities.js"></script>
+    <script src="src/ai.js"></script>
+    <script src="src/world.js"></script>
+    <script src="src/render.js"></script>
+    <script src="src/hud.js"></script>
+    <script src="src/input.js"></script>
+    <script src="src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+# Godot cache
+.godot/
+# Images extracted from the MapleStory M APK. They belong to Nexon: keep them
+# local, never commit them.
+assets/apk/

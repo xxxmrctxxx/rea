@@ -1,0 +1,16 @@
+{
+  "name": "maple-pc",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A PC side-scrolling action RPG inspired by MapleStory M, built from gameplay reference and REA analysis notes.",
+  "type": "commonjs",
+  "main": "electron/main.mjs",
+  "scripts": {
+    "start": "electron .",
+    "serve": "node scripts/serve.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "devDependencies": {
+    "electron": "33.2.1"
+  }
+}
